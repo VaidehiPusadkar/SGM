@@ -21,10 +21,6 @@ while( $line = <FILE> )
 
 $s=length($dna);
 print "$s\n";
-#print out ">gene_cds_exon\n";
-#print  out9 "$s\n";
-#print out "$dna\n";
-
 
 #*******************************************************************************
 @D =<FILE1>;
@@ -78,7 +74,6 @@ $k=0;print out ">$ARGV[0]_$l\n";
 	}
 
 }
-#print "$k\n";
 
 
 
