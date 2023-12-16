@@ -7,7 +7,11 @@ The application facilitated the generation of models from segmented and clustere
 This step involves the segmentation and clustering of each genome based on the specied Markov model order and the threshold for genome segmentation, contiguous clustering and noncontiguous clustering. The Markov model order is used here for the calculation of divergence measure used in genome clustering.
 To execute this step:
 1. Place the genome file for modeling in the "db_folder", which currently contains an example FASTA genome file.
-2. Run the shell script in the Linux terminal: `Step_1.sh`
+2. Run the shell script in the Linux terminal:
+
+ `sh Step_1.sh`
+
+Once the clustered file is generated for a particular genome, there is no need to regenerate the clusters for that same genome. To add a new genome to the database, create a new database folder, add the genome (.fna file) to that folder, and rerun the  `step_1.sh`  command, changing the name of the input folder. Alternatively, you can delete the previous genome files in the "db_genome" folder and add the new genomes to that folder before running the command again.
 
 The output of this steps:
 1. New folder "clustered_genomes" - containing clustered FASTA (.fa) files for each genome.
