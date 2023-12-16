@@ -18,4 +18,5 @@ Note: The increase in the number of genome (.fna) files in the "db_folder" will 
 ## 2. Taxonomic classification of the genome
 This step is very similar to SMM, which involves the generation of higher(10-12) or lower (6-10) order markov models for metagenomic classification. Normalized probability scores can be exported for 12th order analyses. Trying to use an order other than 12 with the norm parameter will result in a warning (if using the supplied Python script), and reversion to raw scores.
 Run the shell script in the Linux terminal: 
+
 `Step_2.sh Genomes.txt Metagenomic_Reads.fasta 12`
