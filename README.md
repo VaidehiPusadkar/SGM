@@ -11,7 +11,7 @@ To execute this step:
 
  `sh Step_1.sh`
 
-Once the clustered file is generated for a particular genome, there is no need to regenerate the clusters for that same genome. To add a new genome to the database, create a new database folder, add the genome (.fna file) to that folder, and rerun the  `step_1.sh`  command, changing the name of the input folder. Alternatively, you can delete the previous genome files in the "db_genome" folder and add the new genomes to that folder before running the command again.
+Once the clustered file is generated for a particular genome, there is no need to regenerate the clusters for that same genome. To add a new genome to the database, create a new database folder, add the genome (.fna file) to that folder, and rerun the  `sh Step_1.sh`  command, changing the name of the input folder. Alternatively, you can delete the previous genome files in the "db_genome" folder and add the new genomes to that folder before running the command again.
 
 The output of this steps:
 1. New folder "clustered_genomes" - containing clustered FASTA (.fa) files for each genome.
