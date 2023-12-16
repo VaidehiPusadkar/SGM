@@ -6,11 +6,14 @@ The application facilitated the generation of models from segmented and clustere
 
 This step involves the segmentation and clustering of each genome based on the specied Markov model order and the threshold for genome segmentation, contiguous clustering and noncontiguous clustering. The Markov model order is used here for the calculation of divergence measure used in genome clustering.
 To execute this step:
-1. Place the genome file for modeling in the "db_folder," which currently contains an example FASTA genome file.
+1. Place the genome file for modeling in the "db_folder", which currently contains an example FASTA genome file.
 2. Run the shell script in the Linux terminal: `Step_1.sh`
 
 The output of this steps:
 1. New folder "clustered_genomes" - containing clustered FASTA (.fa) files for each genome.
 2. A "Genomes.txt",listing the absolute path of all the clusterd genomes to be modeled in the next step of taxonomic classifcation.
-   
+
+Note: The increase in the number of genome (.fna) files in the "db_folder" will result in a corresponding increase in the number of cluster files. Since the number of clusters varies for each genome, there is a potential for a high number of cluster files. While this does not significantly impact memory, it may lead to longer completion times for the analysis due to the higher number of models involved.
+
 ## 2. Taxonomic classification of the genome
+This step is very similar to SMM, which involves the generation of higher(10-12) or lower (6-10) order markov models for metagenomic classification. Normalized probability scores can be exported for 12th order analyses. Trying to use an order other than 12 with the norm parameter will result in a warning (if using the supplied Python script), and reversion to raw scores.
