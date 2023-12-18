@@ -1,4 +1,4 @@
-# SGM
+# Segmental Genome Model
 Segmented Genome Model (SGM) Builder
 The application facilitated the generation of models from segmented and clustered genomes. This process involves a two step in the analysis: in the first step, it accepts the genomes in .fna format, performing the segmentation and clustering of each genome, producing multiple cluster files (in .fa format). In the second step, it processes a the metagenome read file (in FASTA format), converting it to markov-chain indices for efficient probability calculation against the clusters of each genome file instead of complete genome files in SMM. Markov chains are constructed directly from genomic FASTA files, and are retained in memory until all reads are classified.
 
